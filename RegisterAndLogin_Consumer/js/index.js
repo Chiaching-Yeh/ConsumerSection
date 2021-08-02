@@ -271,6 +271,9 @@ $(window).on("load", function () {
   // });
 
 
+
+  $('#AddressSectionZipCode').multiSelect();
+
   // 按下登入按鈕跳置登入頁面
   $(".login").on("click", function () {
     let a = $(".a")
