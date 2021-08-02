@@ -191,10 +191,6 @@ body {
     color: #DB7243;
 }
 
-/* #consumerinfo {
-    position: relative;
-    left: 17%;
-} */
 
 .infoItem{
     display: flex;
@@ -239,7 +235,20 @@ body {
     transform: translateY(4px) !important;
 }
 
-/* 新增一筆常用地址btn */
+.FisrtAddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* 新增一筆常用配送地址按紐 */
+.AddressSectionBtn{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    padding-left: 135px;
+}
 
 .infoItem .addDelAdressBtn {
     padding: .2em .4em;
@@ -258,15 +267,6 @@ body {
     transform: translateY(1px) !important;
 }
 
-.AddAdressItem{
-    position:relative;
-    left: 25px;
-} 
-
-.AddAdressItem input{
-    position: relative;
-    right:4px;
-}
 
 /* 刪除一筆常用地址btn */
 .Addressclose {
@@ -276,6 +276,10 @@ body {
     border-radius: 35px;
 }
 
+.infoItemIsExposeMealInformation,
+.infoItemIsEnalbe{
+    padding-right: 115px;
+}
 
 
 /* 取消autofill的顏色 */
@@ -360,4 +364,22 @@ input[type=file]::file-selector-button:hover {
 
 input[type=file]::file-selector-button:active {
     transform: translateY(1px) !important;
+}
+
+/* 預覽圖 */
+
+.Preview{ 
+    padding-left: 150px;
+}
+
+.PreviewBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color:#ccc;
+    border: #ccc 5px dotted;
+
+    width: 250px;
+    height: 250px;
 }

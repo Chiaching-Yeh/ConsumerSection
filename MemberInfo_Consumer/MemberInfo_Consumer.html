@@ -24,6 +24,11 @@
     <!-- <link href="css/bootstrap-datepicker.css" rel="stylesheet" />
     <link href="css/bootstrap-datepicker.css.map" rel="stylesheet" /> -->
 
+    <!-- 載入Bootstrap相關JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
 
 </head>
 
@@ -180,19 +185,21 @@
                                             aria-label="default input example" id="Address" name="Address"><br><br>
                                     </div>
 
-                                    <div class="infoItem">
-                                        <label for="DeliveryAddresses">常用配送地址：</label>
-                                        <input class="form-control" type="text" placeholder="Default input"
-                                            aria-label="default input example" class="DeliveryAddresses"
-                                            name="DeliveryAddresses"><br><br>
-                                    </div>
+                                    <div class="AddressSection">
+                                        <div class=FisrtAddress>
+                                            <label for="DeliveryAddresses">常用配送地址：</label>
+                                            <input class="form-control" type="text" placeholder="Default input"
+                                                aria-label="default input example" class="DeliveryAddresses"
+                                                name="DeliveryAddresses">
+                                        </div>
 
-                                    <div class="infoItem">
-                                        <div class="AddressSection">
-                                            <label for="DeliveryAddresses" style="visibility: hidden;">常用配送地址：</label>
-                                            <input type="button" class="addDelAdressBtn" value=" + 新增一筆常用配送地址"><br><br>
+                                        <ul class="dynamicAddress"></ul>
+
+                                        <div class="infoItem AddressSectionBtn">
+                                            <input type="button" class="addDelAdressBtn" value=" + 新增一筆常用配送地址"><br>
                                         </div>
                                     </div>
+
 
                                     <div class="infoItem">
                                         <div class="credCardNumber">
@@ -207,7 +214,7 @@
                                         <div class="cardExpiration">
                                             <label for="cardNum">信用卡期限：</label>
                                             <input type="text" class="form-control" name="CreditCardExpirationDate"
-                                                id="datepicker" placeholder="MM / YY" />
+                                                id="inputExpDate" placeholder="MM / YY" />
                                             <!-- <input type="text" class="form-control" id="inputExpDate" placeholder="MM / YY"
                                             maxlength='7' name="CreditCardExpirationDate"> -->
                                         </div><br>
@@ -227,15 +234,21 @@
                                         <input type="file" id="formFile" name="Photo"><br><br>
                                     </div>
 
+                                    <div class="infoItem Preview">
+                                        <div class="PreviewBox">
+                                            <div id="previewIMG"><span class="text">預覽圖</span></div>
+                                        </div>
+                                    </div>
+
                                     <div class="infoItem">
-                                        <label for="LastUpdateAccountNumber" class="form-label">前次修改人編號：</label>
+                                        <label for="LastUpdateAccountNumber" class="form-label">前修改人編號：</label>
                                         <input class="form-control" type="text" placeholder="Default input readonly"
                                             aria-label="default input example" id="LastUpdateAccountNumber"
                                             name="LastUpdateAccountNumber" readonly><br><br>
                                     </div>
 
                                     <div class="infoItem">
-                                        <label for="LastUpdateDatetime" class="form-label">前次修改時間：</label>
+                                        <label for="LastUpdateDatetime" class="form-label">前修改時間：</label>
                                         <input class="form-control" type="text" placeholder="Default input readonly"
                                             aria-label="default input example" id="LastUpdateDatetime"
                                             name="LastUpdateDatetime" readonly><br><br>
@@ -248,7 +261,7 @@
                                             readonly><br><br>
                                     </div>
 
-                                    <div class="infoItem">
+                                    <div class="infoItem infoItemIsEnalbe">
                                         <label for="IsEnalbe" class="form-label">是否啟用：</label>
                                         <label class="switch">
                                             <input type="checkbox">
@@ -256,7 +269,7 @@
                                         </label><br><br>
                                     </div>
 
-                                    <div class="infoItem">
+                                    <div class="infoItem infoItemIsExposeMealInformation">
                                         <label for="IsExposeMealInformation" class="form-label">是否顯示餐點：</label>
                                         <label class="switch">
                                             <input type="checkbox">
@@ -343,6 +356,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 
+
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
 
@@ -353,7 +367,7 @@
     <script src="js/Customize.js"></script>
 
     <!-- 載入datepicker -->
-    <script src="js/bootstrap-datepicker.min.js"></script>
+    <!-- <script src="js/bootstrap-datepicker.min.js"></script> -->
 
 
 </body>
