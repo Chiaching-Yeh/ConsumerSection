@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>消費者專區</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/Customize.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="#" />
+    <script data-search-pseudo-elements defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- google Noto Sans TC 字型 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <!-- datePicker css -->
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="css/bootstrap-datepicker.css.map" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div id="layoutDefault">
+        <div id="layoutDefault_content ">
+            <main>
+                <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
+                    <!-- 若要讓navBar定在最上方要加navbar sticky-top -->
+                    <div class="container" id="navbarcontainer">
+                        <a class="navbar-brand text-primary" href="#">Mass Food!</a><button class="navbar-toggler"
+                            type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto mr-lg-5">
+                                <li class="nav-item"><a class="nav-link" id="nav-link" href="#">美食專區</a></li>
+                                <li class="nav-item dropdown dropdown-lg no-caret">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        style="font-size:1.15em; ;">消費者專區</a>
+                                    <i class="dropdown-arrow"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right animated--fade-in-up"
+                                        aria-labelledby="navbarDropdownPages">
+                                        <div class=" row no-gutters">
+                                            <div class="col-lg-6 p-lg-5">
+                                                <h6 class="dropdown-header text-primary">基本資料</h6>
+                                                <a class="dropdown-item" href="#">會員資料修改</a>
+                                                <div class="dropdown-divider border-0"></div>
+                                                <h6 class="dropdown-header text-primary">訂單管理</h6>
+                                                <a class="dropdown-item" href="#">今日訂單</a>
+                                                <a class="dropdown-item" href="#">訂單查詢</a>
+                                                <div class="dropdown-divider border-0 d-lg-none"></div>
+                                            </div>
+                                            <div class="col-lg-6 p-lg-5">
+                                                <h6 class="dropdown-header text-primary">好友系統</h6>
+                                                <a class="dropdown-item" href="#">好友列表</a>
+                                                <div class="dropdown-divider border-0"></div>
+                                                <h6 class="dropdown-header text-primary">申訴聊天室</h6>
+                                                <a class="dropdown-item" href="#">聯絡客服</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" id="nav-link" href="#">購物車</a></li>
+                            </ul>
+                            <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="#">登出<i
+                                    class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- header中店家圖片 -->
+                <header class="page-header page-header-dark bg-img-cover overlay overlay-60"
+                    style="background-image: url(https://source.unsplash.com/xZgvBXDB9wE/1600x900);">
+                    <div class="page-header-content">
+                        <div class="container text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="page-header-title mb-3 text-light">消費者專區</h1>
+                                    <p class="page-header-text mb-0">Browse posts in the category 'UI'</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="container" id="AsideAndMain">
+                    <div class="row align-items-start">
+                        <div class="col-lg-3" id="aside">
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">基本資料</a>
+                                    <ul>
+                                        <li><a href="#">會員資料修改</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">訂單管理</a>
+                                    <ul>
+                                        <li><a href="#">今日訂單</a></li>
+                                        <li><a href="#">歷史訂單</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">好友系統</a>
+                                    <ul>
+                                        <li><a href="#">好友列表</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">申訴聊天室</a>
+                                    <ul>
+                                        <li><a href="#">聯絡客服</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-9" id="main">
+                            <div class=MainTitle>
+                                <p>會員資料修改</p>
+                            </div>
+                            <div class="infoSection">
+                                <form id="consumerinfo">
+
+                                    <div class="infoItem">
+                                        <label for="AccountNumber" class="form-label">消費者編號：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" readonly><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="Name" class="form-label">姓名：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" id="Name" name="Name"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="Email" class="form-label">電子郵件：</label>
+                                        <input type="email" class="form-control" id="Email" name="Email"
+                                            placeholder="name@example.com" id="Email" name="Email"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="Password" class="form-label">密碼：</label>
+                                        <input type="password" class="form-control" id="Password"
+                                            name="Password"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="passwordAgain" class="form-label">請再輸入密碼：</label>
+                                        <input type="password" class="form-control" name="passwordAgain"
+                                            id="passwordAgain"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="IdentityNumber" class="form-label">身分證字號：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" id="idNum" name="IdentityNumber"
+                                            pattern=""><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="MobilePhone" class="form-label">行動電話：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" id="phoneNum" name="MobilePhone"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="Address" class="form-label">居住地址：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" id="Address" name="Address"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="DeliveryAddresses">常用配送地址：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" class="DeliveryAddresses"
+                                            name="DeliveryAddresses"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <div class="AddressSection">
+                                            <label for="DeliveryAddresses" style="visibility: hidden;">常用配送地址：</label>
+                                            <input type="button" class="addDelAdressBtn" value=" + 新增一筆常用配送地址"><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <div class="credCardNumber">
+                                            <label for="CredCardNumber">信用卡卡號：</label>
+                                            <input type="text" class="form-control" placeholder="CardNum"
+                                                aria-label="default input example" id="ccFormatMonitor" maxlength='19'
+                                                name="CredCardNumber"><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <div class="cardExpiration">
+                                            <label for="cardNum">信用卡期限：</label>
+                                            <input type="text" class="form-control" name="CreditCardExpirationDate"
+                                                id="datepicker" placeholder="MM / YY" />
+                                            <!-- <input type="text" class="form-control" id="inputExpDate" placeholder="MM / YY"
+                                            maxlength='7' name="CreditCardExpirationDate"> -->
+                                        </div><br>
+                                    </div>
+
+
+                                    <div class="infoItem">
+                                        <div class="cardCvv">
+                                            <label for="cardCvv">CVV：</label>
+                                            <input type="password" class="form-control" placeholder="CVV"
+                                                name="CreditSecurityCode" id="CreditSecurityCode">
+                                        </div><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="formFile" class="form-label">相片：</label>
+                                        <input type="file" id="formFile" name="Photo"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="LastUpdateAccountNumber" class="form-label">前次修改人員：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" id="LastUpdateAccountNumber"
+                                            name="LastUpdateAccountNumber" readonly><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="LastUpdateAccountNumber" class="form-label">前次修改人員：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" id="LastUpdateDatetime"
+                                            name="LastUpdateDatetime" readonly><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="Status" class="form-label">狀態：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" id="Status" name="Status"
+                                            readonly><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="IsEnalbe" class="form-label">是否啟用：</label>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="IsExposeMealInformation" class="form-label">是否顯示餐點：</label>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <div class="submitBtnInConsumerinfo">
+                                            <input type="submit" class="submitBtn" value="儲存修改">
+                                        </div><br><br>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="asideMenu">
+            <button class="btnShowFriend">friend</button>
+            <div class="title">好友列表</div>
+            <div class="list">
+                <ol>
+                    <li><span>好友First</span>
+                        <ol>
+                            <li><span>不顯示餐點資訊</span></li>
+                        </ol>
+                    </li>
+                    <li><span>好友Second</span>
+                        <ol>
+                            <li><span>2021-06-15</span>
+                                <ol>
+                                    <li>11:00已有餐點</li>
+                                    <li>13:00已有餐點</li>
+                                    <li>15:00已有餐點</li>
+                                </ol>
+                            </li>
+                            <li><span>2021-06-16</span>
+                                <ol>
+                                    <li>11:00已有餐點</li>
+                                    <li>13:00已有餐點</li>
+                                    <li>15:00已有餐點</li>
+                                </ol>
+                            </li>
+                            <li><span>2021-06-17</span>
+                                <ol>
+                                    <li>11:00已有餐點</li>
+                                    <li>13:00已有餐點</li>
+                                    <li>15:00已有餐點</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><span>好友Third</span>
+                        <ol>
+                            <li><span>不顯示餐點資訊</span></li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        </main>
+    </div>
+    <div id="layoutDefault_footer">
+        <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+            <div class="container">
+                <div class="row">
+                    <span id="contactService">
+                        <a class="col-md-12">聯絡客服</a>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="color: #DFDFDF;">&copy; 2021 All Rights Reserved. 版權所有 不得轉載</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- 載入套版JS -->
+    <script src="js/scripts.js"></script>
+
+    <!-- 載入自訂js -->
+    <script src="js/Customize.js"></script>
+
+    <!-- 載入datepicker -->
+    <script src="js/bootstrap-datepicker.min.js"></script>
+
+
+</body>
+
+</html>
