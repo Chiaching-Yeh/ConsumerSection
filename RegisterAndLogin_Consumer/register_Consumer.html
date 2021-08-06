@@ -29,6 +29,11 @@
     <!-- 載入js -->
     <script src="./js/index.js"></script>
 
+    <!-- 載入month&Yearpicker -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="./vendors/js/jquery.mtz.monthpicker.js"></script>
+
 
 </head>
 
@@ -116,10 +121,8 @@
 
                             <div class="cardExpiration">
                                 <label for="cardNum">信用卡期限：</label>
-                                <input type="text" class="form-control" name="CreditCardExpirationDate" id="inputExpDate"
-                                    placeholder="MM / YY" />
-                                <!-- <input type="text" class="form-control" id="inputExpDate" placeholder="MM / YY"
-                                        maxlength='7' name="CreditCardExpirationDate"> -->
+                                <input type="text" class="form-control" id="Monthpicker" placeholder="MM / YY"
+                                    maxlength='7' name="CreditCardExpirationDate">
                             </div>
 
 
@@ -130,11 +133,14 @@
                             </div>
 
 
-                            <div class="submitBtnInReForm">
-                                <input type="submit" class="submitBtn" value="送出資料">
+                            <div class="formItem">
+                                <div class="ResetBtnInReForm">
+                                    <input type="reset" class="ResetBtn" value="資料重填">
+                                </div>
+                                <div class="submitBtnInReForm">
+                                    <input type="submit" class="submitBtn" value="送出資料">
+                                </div>
                             </div>
-
-
 
                         </form>
                     </div>

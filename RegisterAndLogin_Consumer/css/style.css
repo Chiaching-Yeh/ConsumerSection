@@ -29,6 +29,11 @@ body {
 .navbar-brand p {
     margin: 0px;
     padding-left: 40px;
+    color: #5B352C !important;
+}
+
+.navbar-brand p:hover {
+    color: #d3835e !important;
 }
 
 nav ul {
@@ -145,11 +150,45 @@ input:-webkit-autofill {
     border: 1px solid #ced4da;
 }
 
+
+/* 按鈕區 */
+.formItem{
+    display: flex;
+    justify-content: center;
+}
+
+/* 資料重置 */
+.ResetBtnInReForm{
+    margin-right: 10px;
+    padding-top:15px;
+}
+
+.ResetBtnInReForm input {
+    width: 150px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    color: #3B3B3B;
+    background-color:#DFDFDF;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ResetBtnInReForm input:hover {
+    background-color: #b1aba9;
+}
+
+.ResetBtnInReForm input:active {
+    transform: translateY(4px);
+}
+
+
 /* 讓送出按鈕置中 */
 .submitBtnInReForm{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    padding-top:15px;
 }
 
 .submitBtnInReForm input {

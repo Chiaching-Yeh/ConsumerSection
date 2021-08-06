@@ -74,6 +74,9 @@ body {
     color: seashell;
 }
 
+
+
+/* 表單focus效果 */
 .form-control:focus {
     border-color: #5B352C;
     box-shadow: inset 0 1px 1px #5B352C;
@@ -379,7 +382,6 @@ input[type=file]::file-selector-button:active {
     font-size: 26px;
     color:#ccc;
     border: #ccc 5px dotted;
-
     width: 250px;
     height: 250px;
 }
