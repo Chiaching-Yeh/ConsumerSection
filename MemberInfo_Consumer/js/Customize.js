@@ -309,7 +309,31 @@ jQuery(document).ready(function ($) {
     $(this).parent().remove();
   })
 
- 
+  // 是否啟用
+  var switchStatusForAccount = false;
+  $(".infoItemIsEnalbe input").change(function (e) {
+      if ($(this).is(':checked')) {
+        switchStatusForAccount = $(this).is(':checked');
+          console.log(switchStatusForAccount);
+      }
+      else {
+        switchStatusForAccount = $(this).is(':checked');
+          console.log(switchStatusForAccount);
+      }
+  });
+
+  //是否顯示餐點
+  var switchStatusForMeal = false;
+  $(".infoItemIsExposeMealInformation input").change(function (e) {
+      if ($(this).is(':checked')) {
+        switchStatusForMeal = $(this).is(':checked');
+          console.log(switchStatusForMeal);
+      }
+      else {
+        switchStatusForMeal = $(this).is(':checked');
+          console.log(switchStatusForMeal);
+      }
+  });
 
 
 });
