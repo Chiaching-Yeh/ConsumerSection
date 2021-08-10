@@ -20,15 +20,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
-    <!-- datePicker css -->
-    <!-- <link href="css/bootstrap-datepicker.css" rel="stylesheet" />
-    <link href="css/bootstrap-datepicker.css.map" rel="stylesheet" /> -->
-
     <!-- 載入Bootstrap相關JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-
+   <!-- 銀行信用卡到期 Monthpicker -->
+    <link rel='stylesheet' href='http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css'>
+    
 
 </head>
 
@@ -97,8 +94,11 @@
                     </div>
                 </header>
 
+                <!-- AsideAndMain區塊 -->
                 <div class="container" id="AsideAndMain">
                     <div class="row align-items-start">
+
+                        <!-- Aside區塊 -->
                         <div class="col-lg-3" id="aside">
                             <ul class="cart">
                                 <li>
@@ -129,6 +129,7 @@
                             </ul>
                         </div>
 
+                        <!-- Main區塊 -->
                         <div class="col-lg-9" id="main">
                             <div class=MainTitle>
                                 <p>會員資料修改</p>
@@ -205,7 +206,7 @@
                                         <div class="credCardNumber">
                                             <label for="CredCardNumber">信用卡卡號：</label>
                                             <input type="text" class="form-control" placeholder="CardNum"
-                                                aria-label="default input example" id="ccFormatMonitor" maxlength='19'
+                                                aria-label="default input example"  maxlength='19'
                                                 name="CredCardNumber"><br>
                                         </div>
                                     </div>
@@ -214,9 +215,7 @@
                                         <div class="cardExpiration">
                                             <label for="cardNum">信用卡期限：</label>
                                             <input type="text" class="form-control" name="CreditCardExpirationDate"
-                                                id="inputExpDate" placeholder="MM / YY" />
-                                            <!-- <input type="text" class="form-control" id="inputExpDate" placeholder="MM / YY"
-                                            maxlength='7' name="CreditCardExpirationDate"> -->
+                                                id="inputExpDate" placeholder="MM / YY">
                                         </div><br>
                                     </div>
 
@@ -230,7 +229,7 @@
                                     </div>
 
                                     <div class="infoItem">
-                                        <label for="formFile" class="form-label">相片：</label>
+                                        <label for="formFile" class="form-label">個人相片：</label>
                                         <input type="file" id="formFile" name="Photo"><br><br>
                                     </div>
 
@@ -241,14 +240,14 @@
                                     </div>
 
                                     <div class="infoItem">
-                                        <label for="LastUpdateAccountNumber" class="form-label">前修改人編號：</label>
+                                        <label for="LastUpdateAccountNumber" class="form-label">前次修改人員編號：</label>
                                         <input class="form-control" type="text" placeholder="Default input readonly"
                                             aria-label="default input example" id="LastUpdateAccountNumber"
                                             name="LastUpdateAccountNumber" readonly><br><br>
                                     </div>
 
                                     <div class="infoItem">
-                                        <label for="LastUpdateDatetime" class="form-label">前修改時間：</label>
+                                        <label for="LastUpdateDatetime" class="form-label">前次修改時間：</label>
                                         <input class="form-control" type="text" placeholder="Default input readonly"
                                             aria-label="default input example" id="LastUpdateDatetime"
                                             name="LastUpdateDatetime" readonly><br><br>
@@ -291,6 +290,7 @@
                 </div>
         </div>
 
+        <!-- 好友列表 -->
         <div class="asideMenu">
             <button class="btnShowFriend">friend</button>
             <div class="title">好友列表</div>
@@ -337,6 +337,8 @@
 
         </main>
     </div>
+
+    <!-- Footer -->
     <div id="layoutDefault_footer">
         <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
             <div class="container">
@@ -360,14 +362,16 @@
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
 
+
     <!-- 載入套版JS -->
     <script src="js/scripts.js"></script>
 
     <!-- 載入自訂js -->
     <script src="js/Customize.js"></script>
-
-    <!-- 載入datepicker -->
-    <!-- <script src="js/bootstrap-datepicker.min.js"></script> -->
+    
+    <!-- 銀行信用卡到期 Monthpicker -->
+    <script src='http://code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
+    <script src='./vendor/js/jquery.ui.monthpicker.js'></script>
 
 
 </body>
