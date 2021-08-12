@@ -1,10 +1,11 @@
 jQuery(document).ready(function ($) {
 
-    // 信用卡有效期限
-    $("#inputExpDate").monthpicker({
-        changeYear: true,
-      });
-  
+  // 信用卡有效期限
+  var today = new Date();
+  $("#inputExpDate").monthpicker({
+    changeYear: true,
+  });
+
   // sideBar
 
   $('.cart>li>a').click(function (event) {
@@ -52,27 +53,27 @@ jQuery(document).ready(function ($) {
   // 是否啟用
   var switchStatusForAccount = false;
   $(".infoItemIsEnalbe input").change(function (e) {
-      if ($(this).is(':checked')) {
-        switchStatusForAccount = $(this).is(':checked');
-          console.log(switchStatusForAccount);
-      }
-      else {
-        switchStatusForAccount = $(this).is(':checked');
-          console.log(switchStatusForAccount);
-      }
+    if ($(this).is(':checked')) {
+      switchStatusForAccount = $(this).is(':checked');
+      console.log(switchStatusForAccount);
+    }
+    else {
+      switchStatusForAccount = $(this).is(':checked');
+      console.log(switchStatusForAccount);
+    }
   });
 
   //是否顯示餐點
   var switchStatusForMeal = false;
   $(".infoItemIsExposeMealInformation input").change(function (e) {
-      if ($(this).is(':checked')) {
-        switchStatusForMeal = $(this).is(':checked');
-          console.log(switchStatusForMeal);
-      }
-      else {
-        switchStatusForMeal = $(this).is(':checked');
-          console.log(switchStatusForMeal);
-      }
+    if ($(this).is(':checked')) {
+      switchStatusForMeal = $(this).is(':checked');
+      console.log(switchStatusForMeal);
+    }
+    else {
+      switchStatusForMeal = $(this).is(':checked');
+      console.log(switchStatusForMeal);
+    }
   });
 
 

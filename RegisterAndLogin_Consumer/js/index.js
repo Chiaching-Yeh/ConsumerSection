@@ -49,8 +49,53 @@ $(window).on("load", function () {
   })
 
   // 按下重置鍵清除所有資料
+
+  var count = 0;
+  var Re = $(".ReFormOutline")
+  var Lo = $(".LoginBtnOutline")
+
   $(".ResetBtn").on("click", function () {
-    $(".ReForm input").clear();
+    count = 0;
+    $(".ReForm input").empty();
+    $(".dynamicAddress > li").remove();
+    Re.height(893);
+    Lo.height(893);
   })
+
+
+  // 新增常用配送地址與動態新增高度
+
+  $(".AddressBtn").click(function (e) {
+    count++;
+    console.log(count)
+    if (count > 3) {
+      $(".AddressBtn").attr('disabled', true)
+      count = 3
+      alert("常用配送地址至多三個");
+    } else {
+      $(".AddressBtn").attr('disabled', false)
+      var addDelAdressHTML =
+        `<li class="oftendel">
+          <label>常用配送地址：</label>
+          <input type="text" class="form-control" name="DeliveryAddresses" placeholder="留白請刪除...">
+          <button type="button" class="Addressclose">刪除</button>
+        </li>`;
+      $(".dynamicAddress").append(addDelAdressHTML);
+      Re.height(Re.height() + 65 + "px");
+      Lo.height(Lo.height() + 65 + "px");
+    }
+  })
+
+  // 刪除常用配送地址
+  // 動態新增的元素必須要用此寫法才行
+  $(".dynamicAddress").on("click", ".Addressclose", function () {
+    count--
+    $(this).parent().remove();
+    console.log(count)
+    Re.height(Re.height() - 65 + "px");
+    Lo.height(Lo.height() - 65 + "px");
+  })
+
+
 
 })

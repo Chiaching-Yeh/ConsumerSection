@@ -13,13 +13,10 @@
     }
 }
 
-
-
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
 
 body {
     margin: 0px;
@@ -52,7 +49,7 @@ nav ul li a:hover {
 }
 
 .a {
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin-top: 100px !important;
     margin: 20px;
@@ -61,7 +58,6 @@ nav ul li a:hover {
 }
 
 .b {
-
     display: flex;
     justify-content: center;
     margin-top: 100px !important;
@@ -72,7 +68,7 @@ nav ul li a:hover {
 
 .-none {
     display: none;
-} 
+}
 
 /* 取消autoFill顏色 */
 
@@ -88,7 +84,7 @@ input:-webkit-autofill {
     box-shadow: inset 0 1px 1px #5B352C;
 }
 
-.form-select{
+.form-select {
     font-size: 18px;
 }
 
@@ -105,7 +101,7 @@ input:-webkit-autofill {
 
 .ReFormOutline {
     width: 500px;
-    height: 890px;
+    height: 975px;
     padding: 40px;
     border: #3B3B3B 1px solid;
     border-radius: 50px;
@@ -142,7 +138,7 @@ input:-webkit-autofill {
 .AddressSection, .BankCodeSection select {
     position: relative;
     left: 2px !important;
-} 
+}
 
 .ReForm #BankCode {
     height: 38px;
@@ -150,17 +146,74 @@ input:-webkit-autofill {
     border: 1px solid #ced4da;
 }
 
+/* 新增一筆常用配送地址 */
+.AddressBtn {
+    display: flex;
+    justify-content: center;
+}
 
-/* 按鈕區 */
-.formItem{
+.AddressBtn>p {
+    position: relative;
+    bottom: 5px;
+    left:60px;
+    width: 250px;
+    background-color: #DB7243;
+    color: white;
+    text-align: center;
+    border-radius: 45px;
+}
+
+.AddressBtn > p:hover {
+    background-color: #d3835e;
+}
+
+.AddressBtn > p:active {
+    transform: translateY(4px);
+}
+
+.oftendel{
+    list-style: none;
+}
+
+.oftendel >input{
+    width: 250px;
+}
+
+.dynamicAddress{
+    width: 500px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.Addressclose{
+    background-color: #DB7243;
+    color: white;
+    text-align: center;
+    border-radius: 45px;
+    border:none
+}
+
+.Addressclose:hover{
+    background-color: #d3835e;
+}
+
+.Addressclose:active {
+    transform: translateY(4px);
+}
+
+
+/* 提交與清除按鈕區塊 */
+
+.formItem {
     display: flex;
     justify-content: center;
 }
 
 /* 資料重置 */
-.ResetBtnInReForm{
+
+.ResetBtnInReForm {
     margin-right: 10px;
-    padding-top:15px;
+    padding-top: 15px;
 }
 
 .ResetBtnInReForm input {
@@ -169,7 +222,7 @@ input:-webkit-autofill {
     font-size: 18px;
     border: none;
     color: #3B3B3B;
-    background-color:#DFDFDF;
+    background-color: #DFDFDF;
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
@@ -183,12 +236,12 @@ input:-webkit-autofill {
     transform: translateY(4px);
 }
 
-
 /* 讓送出按鈕置中 */
-.submitBtnInReForm{
+
+.submitBtnInReForm {
     display: flex;
     justify-content: center;
-    padding-top:15px;
+    padding-top: 15px;
 }
 
 .submitBtnInReForm input {
@@ -214,14 +267,14 @@ input:-webkit-autofill {
 .LoginBtnOutline {
     display: flex;
     width: 500px;
-    height: 890px;
+    height: 975px;
     padding: 40px;
     border: #3B3B3B 1px solid;
     border-radius: 50px;
     margin: auto 0 0 0px;
 }
 
-.LoginBtn{
+.LoginBtn {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -291,7 +344,6 @@ input:-webkit-autofill {
     border: #3B3B3B 1px solid;
     border-radius: 50px;
     margin: auto 0 10px 0px;
-    
 }
 
 .LoginFormOutline p {
@@ -383,4 +435,3 @@ footer p {
     padding: 20px;
     margin: 0px;
 }
-
