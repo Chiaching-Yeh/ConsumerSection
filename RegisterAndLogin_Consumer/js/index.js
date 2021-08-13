@@ -68,9 +68,9 @@ $(window).on("load", function () {
   $(".AddressBtn").click(function (e) {
     count++;
     console.log(count)
-    if (count > 3) {
+    if (count > 2) {
       $(".AddressBtn").attr('disabled', true)
-      count = 3
+      count = 2;
       alert("常用配送地址至多三個");
     } else {
       $(".AddressBtn").attr('disabled', false)
@@ -89,13 +89,12 @@ $(window).on("load", function () {
   // 刪除常用配送地址
   // 動態新增的元素必須要用此寫法才行
   $(".dynamicAddress").on("click", ".Addressclose", function () {
-    count--
+    count--;
     $(this).parent().remove();
-    console.log(count)
+    console.log(count);
     Re.height(Re.height() - 65 + "px");
     Lo.height(Lo.height() - 65 + "px");
   })
-
 
 
 })

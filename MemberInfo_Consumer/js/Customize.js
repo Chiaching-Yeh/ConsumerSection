@@ -33,20 +33,29 @@ jQuery(document).ready(function ($) {
 
   // 新增常用配送地址
 
+  var count = 0;
+
   $(".addDelAdressBtn").click(function () {
-    var addDelAdressHTML =
-      `<li class="infoItem">
+    count++;
+    if (count > 2) {
+      count = 2;
+      alert("常用配送地址至多三個");
+    } else {
+      var addDelAdressHTML =
+        `<li class="infoItem">
                 <label for="DeliveryAddresses">常用配送地址：</label>
                 <input type="text" class="form-control" id="DeliveryAddresses" name="DeliveryAddresses" placeholder="留白請刪除...">
                 <button type="button" class="Addressclose">刪除</button>
                 </li>
                 `;
-    $(".dynamicAddress").append(addDelAdressHTML);
+      $(".dynamicAddress").append(addDelAdressHTML);
+    }
   })
 
   // 刪除常用配送地址
   // 動態新增的元素必須要用此寫法才行
   $(".dynamicAddress").on("click", ".Addressclose", function () {
+    count--;
     $(this).parent().remove();
   })
 

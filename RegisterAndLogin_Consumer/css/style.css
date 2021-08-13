@@ -165,6 +165,7 @@ input:-webkit-autofill {
 
 .AddressBtn > p:hover {
     background-color: #d3835e;
+    cursor: pointer;
 }
 
 .AddressBtn > p:active {
@@ -195,6 +196,7 @@ input:-webkit-autofill {
 
 .Addressclose:hover{
     background-color: #d3835e;
+    cursor: pointer;
 }
 
 .Addressclose:active {
