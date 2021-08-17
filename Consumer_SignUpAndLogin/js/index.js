@@ -1,7 +1,7 @@
 $(window).on("load", function () {
 
   // 信用卡有效期限
-  $("#Monthpicker").monthpicker();
+  $("#cardExpiration").monthpicker();
 
   // 按下登入按鈕跳置登入頁面
   $(".login").on("click", function () {

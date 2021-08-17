@@ -61,7 +61,7 @@
                     data = $this.data('monthpicker'),
                     year = (options && options.year) ? options.year : (new Date()).getFullYear(),
                     settings = $.extend({
-                        pattern: 'mm/yyyy',
+                        pattern: 'yyyy-mm',
                         selectedMonth: null,
                         selectedMonthName: '',
                         selectedYear: year,

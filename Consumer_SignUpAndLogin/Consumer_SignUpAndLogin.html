@@ -110,7 +110,7 @@
                                 aria-label="default input example" id="MobilePhone" name="MobilePhone">
 
                             <label for="Address" class="form-label">居住地址：</label>
-                            <input class="form-control" type="text" placeholder="Default input"
+                            <input class="form-control" type="text" placeholder="縣市+市區|鎮區|鎮市|鄉鎮市區"
                                 aria-label="default input example" id="Address" name="Address">
 
                             <label for="DeliveryAddresses" class="form-label">常用配送地址：</label>
@@ -125,16 +125,16 @@
 
 
 
-                            <div class="credCardNumber">
-                                <label for="CredCardNumber">信用卡卡號：</label>
+                            <div class="CreditCardNumber">
+                                <label for="CreditCardNumber">信用卡卡號：</label>
                                 <input type="text" class="form-control" placeholder="CardNum"
                                     aria-label="default input example" id="ccFormatMonitor" maxlength='19'
-                                    name="CredCardNumber"><br>
+                                    name="CreditCardNumber"><br>
                             </div>
 
                             <div class="cardExpiration">
-                                <label for="cardNum">信用卡期限：</label>
-                                <input type="text" class="form-control" id="Monthpicker" placeholder="MM / YY"
+                                <label for="cardExpiration">信用卡期限：</label>
+                                <input type="text" class="form-control" id="cardExpiration" placeholder="yyyy-mm"
                                     maxlength='7' name="CreditCardExpirationDate">
                             </div>
 
@@ -152,6 +152,7 @@
                                 </div>
                                 <div class="submitBtnInReForm">
                                     <input type="submit" class="submitBtn" value="送出資料">
+                                    <input type="hidden" name="action" value="insert">
                                 </div>
                             </div>
 

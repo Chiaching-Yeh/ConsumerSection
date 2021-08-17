@@ -85,5 +85,28 @@ jQuery(document).ready(function ($) {
     }
   });
 
+      // 預覽圖片
+
+      var previewFunction = function (e) {
+        var reader = new FileReader();
+        reader.readAsDataURL(e);
+        reader.addEventListener("load", function () {
+            var img = `<img src = "${reader.result}" class = "preview_Show">`;
+            document.getElementById("previewIMG").innerHTML = "";
+            document.getElementById("previewIMG").insertAdjacentHTML("beforeend", img);
+        })
+    }
+
+    $("#formFile").change(function (e) {
+        console.log(e.target.files.length) // 取得到值
+        if ((this).files.length > 0) { // 取不到值 顯示Cannot read property 'length' of undefined
+            previewFunction(this.files[0]);
+        } else {
+            document.getElementById("previewIMG").innerHTML= '<span class="text">預覽圖</span>';
+        }
+    })
+
+
+
 
 });
